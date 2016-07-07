@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA2569DA56C39B0A70FB93F8CAF8C95F0FD78F26",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D0F86D6EEF9635C323E138680EF2A6E16966CE96" : 0,
+    "BA2569DA56C39B0A70FB93F8CAF8C95F0FD78F26" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "26478D9D-7D56-40F0-A854-D7ECE7CD5F8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D0F86D6EEF9635C323E138680EF2A6E16966CE96" : "",
+    "BA2569DA56C39B0A70FB93F8CAF8C95F0FD78F26" : "BlocBrowser\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BlocBrowser",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BlocBrowser\/BlocBrowser.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:stephenkais\/BlocBrowser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA2569DA56C39B0A70FB93F8CAF8C95F0FD78F26"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:stephenkais\/Alcolator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0F86D6EEF9635C323E138680EF2A6E16966CE96"
+    }
+  ]
+}
