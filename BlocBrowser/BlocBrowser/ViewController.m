@@ -71,8 +71,22 @@
     for (UIView *viewToAdd in @[self.webView, self.textField, self.backButton, self.forwardButton, self.stopButton, self.reloadButton]) {
         [mainView addSubview:viewToAdd];
     }
-
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Welcome"
+                                  message:@"To my web browser!"
+                                  preferredStyle:UIAlertControllerStyleAlert];
     
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"ok!"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [alert dismissViewControllerAnimated:YES completion:nil];
+                             
+                         }];
+    [alert addAction:ok];
+
+    [self presentViewController:alert animated:YES completion:nil];
     self.view = mainView;
 }
 
