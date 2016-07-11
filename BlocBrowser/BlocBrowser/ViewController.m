@@ -187,11 +187,11 @@
 - (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
     if ([title isEqual:kWebBrowserBackString]) {
         [self.webView goBack];
-    } else if ([title isEqual:NSLocalizedString(@"Forward", @"Forward command")]) {
+    } else if ([title isEqual:kWebBrowserBackString]) {
         [self.webView goForward];
-    } else if ([title isEqual:NSLocalizedString(@"Stop", @"Stop command")]) {
+    } else if ([title isEqual:kWebBrowserStopString]) {
         [self.webView stopLoading];
-    } else if ([title isEqual:NSLocalizedString(@"Refresh", @"Reload command")]) {
+    } else if ([title isEqual:kWebBrowserRefreshString]) {
         [self.webView reload];
     }
 }
