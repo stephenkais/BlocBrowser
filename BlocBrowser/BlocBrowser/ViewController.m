@@ -48,15 +48,16 @@
     self.textField.backgroundColor = [UIColor colorWithWhite:220/255.0f alpha:1];
     self.textField.delegate = self;
     
+    self.awesomeToolbar = [[AwesomeFloatingToolbar alloc] initWithFourTitles:@[kWebBrowserBackString, kWebBrowserForwardString, kWebBrowserStopString, kWebBrowserRefreshString]];
+    self.awesomeToolbar.delegate = self;
 
 
     for (UIView *viewToAdd in @[self.webView, self.textField, self.awesomeToolbar]) {
             [mainView addSubview:viewToAdd];
-        self.awesomeToolbar = [[AwesomeFloatingToolbar alloc] initWithFourTitles:@[kWebBrowserBackString, kWebBrowserForwardString, kWebBrowserStopString, kWebBrowserRefreshString]];
-    self.awesomeToolbar.delegate = self;
+    }
     
     self.view = mainView;
-}
+
 }
 
 - (void)viewDidLoad {
@@ -184,7 +185,7 @@
 #pragma mark - AwesomeFloatingToolbarDelegate
 
 - (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
-    if ([title isEqual:NSLocalizedString(@"Back", @"Back command")]) {
+    if ([title isEqual:kWebBrowserBackString]) {
         [self.webView goBack];
     } else if ([title isEqual:NSLocalizedString(@"Forward", @"Forward command")]) {
         [self.webView goForward];
